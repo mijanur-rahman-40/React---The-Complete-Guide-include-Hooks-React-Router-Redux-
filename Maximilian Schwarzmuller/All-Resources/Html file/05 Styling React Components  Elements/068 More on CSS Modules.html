@@ -1,0 +1,22 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>068 More on CSS Modules</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p><strong>CSS Modules</strong> are a relatively new concept (you can dive super-deep into them here: <a href="https://github.com/css-modules/css-modules" rel="noopener noreferrer" target="_blank">https://github.com/css-modules/css-modules</a>). With CSS modules, you can write normal CSS code and make sure, that it only applies to a given component.</p><p>It's not using magic for that, instead it'll simply <strong>automatically generate unique CSS class names</strong> for you. And by importing a JS object and assigning classes from there, you use these dynamically generated, unique names. So the imported JS object simply exposes some properties which hold the generated CSS class names as values.</p><p><strong>Example:</strong></p><p><strong>In Post.css File</strong></p><pre class="prettyprint linenums">.Post {
+    color: red;
+}</pre><p><strong>In Post Component File</strong></p><pre class="prettyprint linenums">import classes from './Post.css';
+
+const post = () =&gt; (
+    &lt;div className={classes.Post}&gt;...&lt;/div&gt;
+);</pre><p>Here, <code>classes.Post</code>  refers to an automatically generated <code>Post</code>  property on the imported <code>classes</code>  object. That property will in the end simply hold a value like <code>Post__Post__ah5_1</code> .</p><p>So your <code>.Post</code>  class was automatically transformed to a different class (<code>Post__Post__ah5_1</code> ) which is unique across the application. You also can't use it accidentally in other components because you don't know the generated string! You can only access it through the <code>classes</code>  object. And if you import the CSS file (in the same way) in another component, the <code>classes</code>  object there will hold a <code>Post</code>  property which yields a <strong>different</strong> (!) CSS class name. Hence it's scoped to a given component.</p><p>By the way, if you somehow also want to define a global (i.e. un-transformed) CSS class in such a <code>.css</code>  file, you can prefix the selector with <code>:global</code> .</p><p><strong>Example:</strong></p><p><code>:global .Post { ... }</code> </p><p>Now you can use <code>className="Post"</code>  anywhere in your app and receive that styling.</p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>

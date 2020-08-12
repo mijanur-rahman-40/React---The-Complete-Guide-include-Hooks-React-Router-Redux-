@@ -1,0 +1,64 @@
+16053f2060a131bdd74cbfea35c34ad9
+"use strict";
+
+var _interopRequireWildcard = require("/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/node_modules/@babel/runtime/helpers/interopRequireWildcard");
+
+var _interopRequireDefault = require("/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _ModalModule = _interopRequireDefault(require("./Modal.module.css"));
+
+var _Aux = _interopRequireDefault(require("../../../hoc/Aux/Aux"));
+
+var _Backdrop = _interopRequireDefault(require("../Backdrop/Backdrop"));
+
+var _jsxFileName = "/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/src/components/UI/Modal/Modal.js";
+
+class Modal extends _react.Component {
+  shouldComponentUpdate(nextProps, nextState, nextContext) {
+    // the issue is to between model and spinner
+    // if children change
+    return nextProps.show !== this.props.show || nextProps.children !== this.props.children;
+  }
+
+  render() {
+    return _react.default.createElement(_Aux.default, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }, _react.default.createElement(_Backdrop.default, {
+      show: this.props.show,
+      clicked: this.props.modalClosed,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }), _react.default.createElement("div", {
+      className: _ModalModule.default.Modal,
+      style: {
+        transform: this.props.show ? 'translateY(0)' : 'translateY(-100vh)',
+        opacity: this.props.show ? '1' : '0'
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19
+      },
+      __self: this
+    }, this.props.children));
+  }
+
+}
+
+;
+var _default = Modal;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIk1vZGFsLmpzIl0sIm5hbWVzIjpbIk1vZGFsIiwiQ29tcG9uZW50Iiwic2hvdWxkQ29tcG9uZW50VXBkYXRlIiwibmV4dFByb3BzIiwibmV4dFN0YXRlIiwibmV4dENvbnRleHQiLCJzaG93IiwicHJvcHMiLCJjaGlsZHJlbiIsInJlbmRlciIsIm1vZGFsQ2xvc2VkIiwiY2xhc3NlcyIsInRyYW5zZm9ybSIsIm9wYWNpdHkiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O0FBQUE7O0FBQ0E7O0FBQ0E7O0FBQ0E7Ozs7QUFFQSxNQUFNQSxLQUFOLFNBQW9CQyxnQkFBcEIsQ0FBOEI7QUFDMUJDLEVBQUFBLHFCQUFxQixDQUFDQyxTQUFELEVBQVlDLFNBQVosRUFBdUJDLFdBQXZCLEVBQW9DO0FBQ3JEO0FBQ0E7QUFDQSxXQUFPRixTQUFTLENBQUNHLElBQVYsS0FBbUIsS0FBS0MsS0FBTCxDQUFXRCxJQUE5QixJQUFzQ0gsU0FBUyxDQUFDSyxRQUFWLEtBQXVCLEtBQUtELEtBQUwsQ0FBV0MsUUFBL0U7QUFDSDs7QUFFREMsRUFBQUEsTUFBTSxHQUFHO0FBQ0wsV0FDSSw2QkFBQyxZQUFEO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLE9BQ0ksNkJBQUMsaUJBQUQ7QUFDSSxNQUFBLElBQUksRUFBRSxLQUFLRixLQUFMLENBQVdELElBRHJCO0FBRUksTUFBQSxPQUFPLEVBQUUsS0FBS0MsS0FBTCxDQUFXRyxXQUZ4QjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxNQURKLEVBSUk7QUFBSyxNQUFBLFNBQVMsRUFBRUMscUJBQVFYLEtBQXhCO0FBQ0ksTUFBQSxLQUFLLEVBQUU7QUFDSFksUUFBQUEsU0FBUyxFQUFFLEtBQUtMLEtBQUwsQ0FBV0QsSUFBWCxHQUFrQixlQUFsQixHQUFvQyxvQkFENUM7QUFFSE8sUUFBQUEsT0FBTyxFQUFFLEtBQUtOLEtBQUwsQ0FBV0QsSUFBWCxHQUFrQixHQUFsQixHQUF3QjtBQUY5QixPQURYO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLE9BS0ssS0FBS0MsS0FBTCxDQUFXQyxRQUxoQixDQUpKLENBREo7QUFjSDs7QUF0QnlCOztBQXVCN0I7ZUFFY1IsSyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgY2xhc3NlcyBmcm9tICcuL01vZGFsLm1vZHVsZS5jc3MnO1xuaW1wb3J0IEF1eCBmcm9tICcuLi8uLi8uLi9ob2MvQXV4L0F1eCc7XG5pbXBvcnQgQmFja2Ryb3AgZnJvbSAnLi4vQmFja2Ryb3AvQmFja2Ryb3AnO1xuXG5jbGFzcyBNb2RhbCBleHRlbmRzIENvbXBvbmVudCB7XG4gICAgc2hvdWxkQ29tcG9uZW50VXBkYXRlKG5leHRQcm9wcywgbmV4dFN0YXRlLCBuZXh0Q29udGV4dCkge1xuICAgICAgICAvLyB0aGUgaXNzdWUgaXMgdG8gYmV0d2VlbiBtb2RlbCBhbmQgc3Bpbm5lclxuICAgICAgICAvLyBpZiBjaGlsZHJlbiBjaGFuZ2VcbiAgICAgICAgcmV0dXJuIG5leHRQcm9wcy5zaG93ICE9PSB0aGlzLnByb3BzLnNob3cgfHwgbmV4dFByb3BzLmNoaWxkcmVuICE9PSB0aGlzLnByb3BzLmNoaWxkcmVuO1xuICAgIH1cblxuICAgIHJlbmRlcigpIHtcbiAgICAgICAgcmV0dXJuIChcbiAgICAgICAgICAgIDxBdXg+XG4gICAgICAgICAgICAgICAgPEJhY2tkcm9wXG4gICAgICAgICAgICAgICAgICAgIHNob3c9e3RoaXMucHJvcHMuc2hvd31cbiAgICAgICAgICAgICAgICAgICAgY2xpY2tlZD17dGhpcy5wcm9wcy5tb2RhbENsb3NlZH0gLz5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5Nb2RhbH1cbiAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3tcbiAgICAgICAgICAgICAgICAgICAgICAgIHRyYW5zZm9ybTogdGhpcy5wcm9wcy5zaG93ID8gJ3RyYW5zbGF0ZVkoMCknIDogJ3RyYW5zbGF0ZVkoLTEwMHZoKScsXG4gICAgICAgICAgICAgICAgICAgICAgICBvcGFjaXR5OiB0aGlzLnByb3BzLnNob3cgPyAnMScgOiAnMCdcbiAgICAgICAgICAgICAgICAgICAgfX0gPlxuICAgICAgICAgICAgICAgICAgICB7dGhpcy5wcm9wcy5jaGlsZHJlbn1cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvQXV4PlxuICAgICAgICApO1xuICAgIH1cbn07XG5cbmV4cG9ydCBkZWZhdWx0IE1vZGFsOyJdfQ==

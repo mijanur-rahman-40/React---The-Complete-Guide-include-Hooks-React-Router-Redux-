@@ -1,0 +1,32 @@
+.Auth {
+    width: 90%;
+    box-shadow: 0px 2px 2px 0px rgba(66, 64, 64, 0.2);
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+    zoom: 1;
+}
+.Auth button{
+    width: 94%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+@media (min-width: 500px) {
+    .Auth {
+        width: 500px;
+    }
+    .Auth button{
+        width: 96%;
+        margin-left: 10px;
+        margin-top: 10px;
+   }
+}
+
+/* @media only screen and (min-width: 360px) and (max-width: 499px){
+   button{
+         width: 96%;
+    }
+} */

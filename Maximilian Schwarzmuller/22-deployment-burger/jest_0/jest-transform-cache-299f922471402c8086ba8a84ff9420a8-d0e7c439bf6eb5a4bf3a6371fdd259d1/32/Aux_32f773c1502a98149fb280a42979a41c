@@ -1,0 +1,13 @@
+2f503b089f82e7703ad0b9444c86af4a
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+const aux = props => props.children;
+
+var _default = aux;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkF1eC5qcyJdLCJuYW1lcyI6WyJhdXgiLCJwcm9wcyIsImNoaWxkcmVuIl0sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQUEsTUFBTUEsR0FBRyxHQUFJQyxLQUFELElBQVdBLEtBQUssQ0FBQ0MsUUFBN0I7O2VBRWVGLEciLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBhdXggPSAocHJvcHMpID0+IHByb3BzLmNoaWxkcmVuO1xuXG5leHBvcnQgZGVmYXVsdCBhdXg7Il19

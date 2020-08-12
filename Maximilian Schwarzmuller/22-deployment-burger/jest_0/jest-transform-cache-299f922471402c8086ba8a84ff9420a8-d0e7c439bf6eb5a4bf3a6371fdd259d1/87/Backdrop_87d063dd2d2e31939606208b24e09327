@@ -1,0 +1,29 @@
+8b6bfcde1c213e7e11a18ee124750c95
+"use strict";
+
+var _interopRequireDefault = require("/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _BackdropModule = _interopRequireDefault(require("./Backdrop.module.css"));
+
+var _jsxFileName = "/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/src/components/UI/Backdrop/Backdrop.js";
+
+const backdrop = props => props.show ? _react.default.createElement("div", {
+  className: _BackdropModule.default.Backdrop,
+  onClick: props.clicked,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: void 0
+}) : null;
+
+var _default = backdrop;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkJhY2tkcm9wLmpzIl0sIm5hbWVzIjpbImJhY2tkcm9wIiwicHJvcHMiLCJzaG93IiwiY2xhc3NlcyIsIkJhY2tkcm9wIiwiY2xpY2tlZCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7O0FBQ0E7Ozs7QUFFQSxNQUFNQSxRQUFRLEdBQUlDLEtBQUQsSUFDYkEsS0FBSyxDQUFDQyxJQUFOLEdBQWE7QUFDVCxFQUFBLFNBQVMsRUFBRUMsd0JBQVFDLFFBRFY7QUFFVCxFQUFBLE9BQU8sRUFBRUgsS0FBSyxDQUFDSSxPQUZOO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEVBQWIsR0FHVSxJQUpkOztlQU9lTCxRIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCBjbGFzc2VzIGZyb20gJy4vQmFja2Ryb3AubW9kdWxlLmNzcyc7XG5cbmNvbnN0IGJhY2tkcm9wID0gKHByb3BzKSA9PiAoXG4gICAgcHJvcHMuc2hvdyA/IDxkaXZcbiAgICAgICAgY2xhc3NOYW1lPXtjbGFzc2VzLkJhY2tkcm9wfVxuICAgICAgICBvbkNsaWNrPXtwcm9wcy5jbGlja2VkfVxuICAgID48L2Rpdj4gOiBudWxsXG4pO1xuXG5leHBvcnQgZGVmYXVsdCBiYWNrZHJvcDsiXX0=

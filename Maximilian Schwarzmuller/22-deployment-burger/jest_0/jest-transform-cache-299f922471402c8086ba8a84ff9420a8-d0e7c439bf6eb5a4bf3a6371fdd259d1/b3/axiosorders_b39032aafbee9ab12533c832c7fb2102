@@ -1,0 +1,19 @@
+5a4d8af3e7255c0ee7c9c0ae1046ede3
+"use strict";
+
+var _interopRequireDefault = require("/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _axios = _interopRequireDefault(require("axios"));
+
+const instance = _axios.default.create({
+  baseURL: 'https://react-my-burger-a3add.firebaseio.com/'
+});
+
+var _default = instance;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImF4aW9zLW9yZGVycy5qcyJdLCJuYW1lcyI6WyJpbnN0YW5jZSIsImF4aW9zIiwiY3JlYXRlIiwiYmFzZVVSTCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7O0FBRUEsTUFBTUEsUUFBUSxHQUFHQyxlQUFNQyxNQUFOLENBQWE7QUFDMUJDLEVBQUFBLE9BQU8sRUFBQztBQURrQixDQUFiLENBQWpCOztlQUllSCxRIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGF4aW9zIGZyb20gJ2F4aW9zJztcblxuY29uc3QgaW5zdGFuY2UgPSBheGlvcy5jcmVhdGUoe1xuICAgIGJhc2VVUkw6J2h0dHBzOi8vcmVhY3QtbXktYnVyZ2VyLWEzYWRkLmZpcmViYXNlaW8uY29tLydcbn0pO1xuXG5leHBvcnQgZGVmYXVsdCBpbnN0YW5jZTsiXX0=

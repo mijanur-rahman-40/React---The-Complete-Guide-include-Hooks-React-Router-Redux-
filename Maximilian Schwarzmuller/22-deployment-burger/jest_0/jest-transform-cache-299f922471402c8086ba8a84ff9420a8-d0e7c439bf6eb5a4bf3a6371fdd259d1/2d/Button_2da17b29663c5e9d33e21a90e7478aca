@@ -1,0 +1,30 @@
+c3e7baa56a28f9df809d0425d89859ef
+"use strict";
+
+var _interopRequireDefault = require("/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _ButtonModule = _interopRequireDefault(require("./Button.module.css"));
+
+var _jsxFileName = "/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/src/components/UI/Button/Button.js";
+
+const button = props => _react.default.createElement("button", {
+  disabled: props.disabled,
+  className: [_ButtonModule.default.Button, _ButtonModule.default[props.buttonType]].join(' '),
+  onClick: props.clicked,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: void 0
+}, props.children);
+
+var _default = button;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkJ1dHRvbi5qcyJdLCJuYW1lcyI6WyJidXR0b24iLCJwcm9wcyIsImRpc2FibGVkIiwiY2xhc3NlcyIsIkJ1dHRvbiIsImJ1dHRvblR5cGUiLCJqb2luIiwiY2xpY2tlZCIsImNoaWxkcmVuIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBQTs7QUFDQTs7OztBQUVBLE1BQU1BLE1BQU0sR0FBSUMsS0FBRCxJQUNYO0FBQ0ksRUFBQSxRQUFRLEVBQUVBLEtBQUssQ0FBQ0MsUUFEcEI7QUFFSSxFQUFBLFNBQVMsRUFBRSxDQUFDQyxzQkFBUUMsTUFBVCxFQUFpQkQsc0JBQVFGLEtBQUssQ0FBQ0ksVUFBZCxDQUFqQixFQUE0Q0MsSUFBNUMsQ0FBaUQsR0FBakQsQ0FGZjtBQUdJLEVBQUEsT0FBTyxFQUFFTCxLQUFLLENBQUNNLE9BSG5CO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEdBSUtOLEtBQUssQ0FBQ08sUUFKWCxDQURKOztlQVNlUixNIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCBjbGFzc2VzIGZyb20gJy4vQnV0dG9uLm1vZHVsZS5jc3MnO1xuXG5jb25zdCBidXR0b24gPSAocHJvcHMpID0+IChcbiAgICA8YnV0dG9uXG4gICAgICAgIGRpc2FibGVkPXtwcm9wcy5kaXNhYmxlZH1cbiAgICAgICAgY2xhc3NOYW1lPXtbY2xhc3Nlcy5CdXR0b24sIGNsYXNzZXNbcHJvcHMuYnV0dG9uVHlwZV1dLmpvaW4oJyAnKX1cbiAgICAgICAgb25DbGljaz17cHJvcHMuY2xpY2tlZH0+XG4gICAgICAgIHtwcm9wcy5jaGlsZHJlbn1cbiAgICA8L2J1dHRvbj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IGJ1dHRvbjsiXX0=

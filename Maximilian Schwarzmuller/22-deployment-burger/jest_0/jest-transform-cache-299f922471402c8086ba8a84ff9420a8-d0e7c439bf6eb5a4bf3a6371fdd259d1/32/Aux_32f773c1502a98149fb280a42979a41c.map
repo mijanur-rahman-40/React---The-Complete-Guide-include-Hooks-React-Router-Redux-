@@ -1,0 +1,1 @@
+{"version":3,"sources":["Aux.js"],"names":["aux","props","children"],"mappings":";;;;;;;AAAA,MAAMA,GAAG,GAAIC,KAAD,IAAWA,KAAK,CAACC,QAA7B;;eAEeF,G","sourcesContent":["const aux = (props) => props.children;\n\nexport default aux;"]}

@@ -1,0 +1,39 @@
+.ContactData {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 2px 3px #ccc;
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.ContactData input{
+    background:white;
+    border: 1px solid #e2d9d9;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: sans-serif;
+    font-weight: 300;
+    color:black;
+    font-weight: 400;
+    width: 80%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.ContactData input:focus{
+    border: 1px solid green;
+}
+
+.ContactData button{
+   margin-top: 10px;
+   width: 80%;
+}
+
+@media (min-width: 600px) {
+    .ContactData {
+        width: 500px;
+    }
+}

@@ -1,0 +1,162 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>234 Showing Error Messages</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>We're not showing any error messages in our form, but you can of course easily add some.</p>
+
+<p>The form inputs (<code>&lt;Input /&gt;</code>  component) already receives the information whether it's invalid or not. You could of course easily add some conditionally rendered element inside of that component.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>For example (inside <code>&lt;Input /&gt;</code>  component function):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">// all the other code from the videos
+
+let validationError = null;
+if (props.invalid &amp;&amp; props.touched) {
+    validationError = &lt;p&gt;Please enter a valid value!&lt;/p&gt;;
+}
+
+return (
+     &lt;div className={classes.Input}&gt;
+         &lt;label className={classes.Label}&gt;{props.label}&lt;/label&gt;
+         {inputElement}
+         {validationError}
+     &lt;/div&gt;
+ );</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>This could of course be finetuned. You could also pass the value type (e.g. <code>"email address"</code> ) as a prop:</p>
+
+
+
+
+
+
+
+
+
+
+
+<p><code>validationError = &lt;p&gt;Please enter a valid {props.valueType}&lt;/p&gt;;</code> <br></p>
+
+
+
+
+
+
+
+
+
+<p>You could also receive the complete error message as a prop:</p>
+
+
+
+
+
+
+
+
+
+
+
+<p><code>validationError = &lt;p&gt;{props.errorMessage}&lt;/p&gt;;</code> </p><p>And of course, also don't forget to style the messages if you want to do that:</p>
+
+
+
+
+
+
+
+<p><code>validationError = &lt;p className={classes.ValidationError}&gt;{props.errorMessage}&lt;/p&gt;;</code></p>
+
+
+
+
+
+
+
+<p>In your CSS file, you could have:</p>
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">.ValidationError {
+    color: red;
+    margin: 5px 0;
+} </pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><br></p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>

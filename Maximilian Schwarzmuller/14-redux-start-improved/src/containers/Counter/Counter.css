@@ -1,0 +1,44 @@
+button {
+    background-color: #fa923f;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 7px;
+    border-radius: 3px;
+    color: white;
+    width: 74%;
+}
+
+button:hover{
+    background-color: #e78738;
+}
+ul{  
+    width: 30%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+li{
+    margin-right: 30px;
+    font-size: 25px;
+    list-style: none;
+    margin-top: 5px;
+    border-radius: 3px;
+    padding: 5px;
+    color: #fa923f;
+    background-color: whitesmoke;
+}
+li:hover{
+    color: #ff7402;
+    cursor: pointer;
+    background-color: rgb(233, 224, 224);
+}
+
+@media (min-width: 500px){
+    button{
+        width: 40%; 
+    }
+    ul{
+        width: 20%;
+    }
+}

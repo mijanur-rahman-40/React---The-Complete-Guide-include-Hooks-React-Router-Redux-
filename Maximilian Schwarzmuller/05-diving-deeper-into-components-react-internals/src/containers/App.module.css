@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.App button {
+  border-radius: 5px;
+  border: 0px solid rgb(133, 116, 228);
+  padding: 7px 17px;
+  background:  rgb(133, 116, 228);
+  font: inherit;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.App button{
+  font-family: Ubuntu;
+}

@@ -1,0 +1,81 @@
+c19cb2e22b2f34569092fe2b69b6e672
+"use strict";
+
+var _interopRequireDefault = require("/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _BurgerIngredient = _interopRequireDefault(require("./BurgerIngredient/BurgerIngredient"));
+
+var _BurgerModule = _interopRequireDefault(require("./Burger.module.css"));
+
+var _jsxFileName = "/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/src/components/Burger/Burger.js";
+
+const Burger = props => {
+  // getting the all keys of props object
+  let transformedIngredients = Object.keys(props.ingredients).map(ingredientsKey => {
+    // constructing a new array every time
+    // console.log(...Array(props.ingredients[ingredientsKey]));
+    return [...Array(props.ingredients[ingredientsKey])].map((_, i) => {
+      // console.log(ingredientsKey + i)
+      return _react.default.createElement(_BurgerIngredient.default, {
+        key: ingredientsKey + i,
+        type: ingredientsKey,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: void 0
+      });
+    });
+  }) // checking for any empty ingredients
+  // arr -> previous array
+  // element-> current value
+  // [] -> intial value is the reduced value of reduce function
+  .reduce((arr, element) => {
+    // console.log(element)
+    return arr.concat(element);
+  }, []); // console.log(transformedIngredients);
+
+  if (transformedIngredients.length === 0) {
+    transformedIngredients = _react.default.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: void 0
+    }, "Please start adding ingredients");
+  }
+
+  return _react.default.createElement("div", {
+    className: _BurgerModule.default.Burger,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: void 0
+  }, _react.default.createElement(_BurgerIngredient.default, {
+    type: "bread-top",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: void 0
+  }), transformedIngredients, _react.default.createElement(_BurgerIngredient.default, {
+    type: "bread-bottom",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: void 0
+  }));
+};
+
+var _default = Burger;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkJ1cmdlci5qcyJdLCJuYW1lcyI6WyJCdXJnZXIiLCJwcm9wcyIsInRyYW5zZm9ybWVkSW5ncmVkaWVudHMiLCJPYmplY3QiLCJrZXlzIiwiaW5ncmVkaWVudHMiLCJtYXAiLCJpbmdyZWRpZW50c0tleSIsIkFycmF5IiwiXyIsImkiLCJyZWR1Y2UiLCJhcnIiLCJlbGVtZW50IiwiY29uY2F0IiwibGVuZ3RoIiwiY2xhc3NlcyJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7O0FBQUE7O0FBQ0E7O0FBQ0E7Ozs7QUFFQSxNQUFNQSxNQUFNLEdBQUlDLEtBQUQsSUFBVztBQUN0QjtBQUNBLE1BQUlDLHNCQUFzQixHQUFHQyxNQUFNLENBQUNDLElBQVAsQ0FBWUgsS0FBSyxDQUFDSSxXQUFsQixFQUN4QkMsR0FEd0IsQ0FDbkJDLGNBQUQsSUFBb0I7QUFDckI7QUFDQTtBQUNBLFdBQU8sQ0FBQyxHQUFHQyxLQUFLLENBQUNQLEtBQUssQ0FBQ0ksV0FBTixDQUFrQkUsY0FBbEIsQ0FBRCxDQUFULEVBQ0ZELEdBREUsQ0FDRSxDQUFDRyxDQUFELEVBQUlDLENBQUosS0FBVTtBQUNYO0FBQ0EsYUFBTyw2QkFBQyx5QkFBRDtBQUFrQixRQUFBLEdBQUcsRUFBRUgsY0FBYyxHQUFHRyxDQUF4QztBQUEyQyxRQUFBLElBQUksRUFBRUgsY0FBakQ7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsUUFBUDtBQUNILEtBSkUsQ0FBUDtBQUtILEdBVHdCLEVBVXpCO0FBQ0E7QUFDQTtBQUNBO0FBYnlCLEdBY3hCSSxNQWR3QixDQWNqQixDQUFDQyxHQUFELEVBQU1DLE9BQU4sS0FBa0I7QUFDdEI7QUFDQSxXQUFPRCxHQUFHLENBQUNFLE1BQUosQ0FBV0QsT0FBWCxDQUFQO0FBQ0gsR0FqQndCLEVBaUJ0QixFQWpCc0IsQ0FBN0IsQ0FGc0IsQ0FvQnRCOztBQUNBLE1BQUlYLHNCQUFzQixDQUFDYSxNQUF2QixLQUFrQyxDQUF0QyxFQUF5QztBQUNyQ2IsSUFBQUEsc0JBQXNCLEdBQUc7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEseUNBQXpCO0FBQ0g7O0FBQ0QsU0FDSTtBQUFLLElBQUEsU0FBUyxFQUFFYyxzQkFBUWhCLE1BQXhCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLEtBQ0ksNkJBQUMseUJBQUQ7QUFBa0IsSUFBQSxJQUFJLEVBQUMsV0FBdkI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsSUFESixFQUVLRSxzQkFGTCxFQUdJLDZCQUFDLHlCQUFEO0FBQWtCLElBQUEsSUFBSSxFQUFDLGNBQXZCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLElBSEosQ0FESjtBQU9ILENBL0JEOztlQWlDZUYsTSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgQnVyZ2VySW5ncmVkaWVudCBmcm9tICcuL0J1cmdlckluZ3JlZGllbnQvQnVyZ2VySW5ncmVkaWVudCc7XG5pbXBvcnQgY2xhc3NlcyBmcm9tICcuL0J1cmdlci5tb2R1bGUuY3NzJztcblxuY29uc3QgQnVyZ2VyID0gKHByb3BzKSA9PiB7XG4gICAgLy8gZ2V0dGluZyB0aGUgYWxsIGtleXMgb2YgcHJvcHMgb2JqZWN0XG4gICAgbGV0IHRyYW5zZm9ybWVkSW5ncmVkaWVudHMgPSBPYmplY3Qua2V5cyhwcm9wcy5pbmdyZWRpZW50cylcbiAgICAgICAgLm1hcCgoaW5ncmVkaWVudHNLZXkpID0+IHtcbiAgICAgICAgICAgIC8vIGNvbnN0cnVjdGluZyBhIG5ldyBhcnJheSBldmVyeSB0aW1lXG4gICAgICAgICAgICAvLyBjb25zb2xlLmxvZyguLi5BcnJheShwcm9wcy5pbmdyZWRpZW50c1tpbmdyZWRpZW50c0tleV0pKTtcbiAgICAgICAgICAgIHJldHVybiBbLi4uQXJyYXkocHJvcHMuaW5ncmVkaWVudHNbaW5ncmVkaWVudHNLZXldKV1cbiAgICAgICAgICAgICAgICAubWFwKChfLCBpKSA9PiB7XG4gICAgICAgICAgICAgICAgICAgIC8vIGNvbnNvbGUubG9nKGluZ3JlZGllbnRzS2V5ICsgaSlcbiAgICAgICAgICAgICAgICAgICAgcmV0dXJuIDxCdXJnZXJJbmdyZWRpZW50IGtleT17aW5ncmVkaWVudHNLZXkgKyBpfSB0eXBlPXtpbmdyZWRpZW50c0tleX0gLz5cbiAgICAgICAgICAgICAgICB9KVxuICAgICAgICB9KVxuICAgICAgICAvLyBjaGVja2luZyBmb3IgYW55IGVtcHR5IGluZ3JlZGllbnRzXG4gICAgICAgIC8vIGFyciAtPiBwcmV2aW91cyBhcnJheVxuICAgICAgICAvLyBlbGVtZW50LT4gY3VycmVudCB2YWx1ZVxuICAgICAgICAvLyBbXSAtPiBpbnRpYWwgdmFsdWUgaXMgdGhlIHJlZHVjZWQgdmFsdWUgb2YgcmVkdWNlIGZ1bmN0aW9uXG4gICAgICAgIC5yZWR1Y2UoKGFyciwgZWxlbWVudCkgPT4ge1xuICAgICAgICAgICAgLy8gY29uc29sZS5sb2coZWxlbWVudClcbiAgICAgICAgICAgIHJldHVybiBhcnIuY29uY2F0KGVsZW1lbnQpXG4gICAgICAgIH0sIFtdKTtcbiAgICAvLyBjb25zb2xlLmxvZyh0cmFuc2Zvcm1lZEluZ3JlZGllbnRzKTtcbiAgICBpZiAodHJhbnNmb3JtZWRJbmdyZWRpZW50cy5sZW5ndGggPT09IDApIHtcbiAgICAgICAgdHJhbnNmb3JtZWRJbmdyZWRpZW50cyA9IDxwPlBsZWFzZSBzdGFydCBhZGRpbmcgaW5ncmVkaWVudHM8L3A+XG4gICAgfVxuICAgIHJldHVybiAoXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPXtjbGFzc2VzLkJ1cmdlcn0+XG4gICAgICAgICAgICA8QnVyZ2VySW5ncmVkaWVudCB0eXBlPSdicmVhZC10b3AnIC8+XG4gICAgICAgICAgICB7dHJhbnNmb3JtZWRJbmdyZWRpZW50c31cbiAgICAgICAgICAgIDxCdXJnZXJJbmdyZWRpZW50IHR5cGU9J2JyZWFkLWJvdHRvbScgLz5cbiAgICAgICAgPC9kaXY+XG4gICAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IEJ1cmdlcjsiXX0=

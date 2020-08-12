@@ -1,0 +1,34 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>033 Components  JSX Cheat Sheet</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>Components are the <strong>core building block of React apps</strong>. Actually, React really is just a library for creating components in its core.</p>
+
+<p>A typical React app therefore could be depicted as a <strong>component tree</strong> - having one root component ("App") and then an potentially infinite amount of nested child components.</p>
+
+
+
+<p>Each component needs to return/ render some <strong>JSX</strong> code - it defines which HTML code React should render to the real DOM in the end.</p>
+
+
+
+<p><strong>JSX is NOT HTML</strong> but it looks a lot like it. Differences can be seen when looking closely though (for example className in JSX vs class in "normal HTML"). JSX is just syntactic sugar for JavaScript, allowing you to write HTMLish code instead of nested React.createElement(...) calls.</p>
+
+
+
+<p>When creating components, you have the choice between<strong> two different ways:</strong></p>
+
+
+
+<ol><li><strong>Functional components</strong> (also referred to as "presentational", "dumb" or "stateless" components - more about this later in the course) =&gt; <code>const cmp = () =&gt; { return &lt;div&gt;some JSX&lt;/div&gt; }</code> (using ES6 arrow functions as shown here is recommended but optional)</li><li><strong>class-based components</strong> (also referred to as "containers", "smart" or "stateful" components) =&gt; <code>class Cmp extends Component { render () { return &lt;div&gt;some JSX&lt;/div&gt; } }</code> </li></ol><p>We'll of course dive into the difference throughout this course, you can already note that you should use 1) as often as possible though. It's the best-practice.</p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>

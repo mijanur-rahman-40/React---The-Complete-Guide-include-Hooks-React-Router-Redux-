@@ -1,0 +1,28 @@
+9c3b28db12aee7236776bb11a36ded72
+"use strict";
+
+var _interopRequireDefault = require("/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _SpinnerModule = _interopRequireDefault(require("./Spinner.module.css"));
+
+var _jsxFileName = "/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/src/components/UI/Spinner/Spinner.js";
+
+const spinner = () => _react.default.createElement("div", {
+  className: _SpinnerModule.default.Loader,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: void 0
+}, "Loading...");
+
+var _default = spinner;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlNwaW5uZXIuanMiXSwibmFtZXMiOlsic3Bpbm5lciIsImNsYXNzZXMiLCJMb2FkZXIiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBOztBQUNBOzs7O0FBRUEsTUFBTUEsT0FBTyxHQUFHLE1BQ1o7QUFBSyxFQUFBLFNBQVMsRUFBRUMsdUJBQVFDLE1BQXhCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLGdCQURKOztlQUllRixPIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCBjbGFzc2VzIGZyb20gJy4vU3Bpbm5lci5tb2R1bGUuY3NzJztcblxuY29uc3Qgc3Bpbm5lciA9ICgpID0+IChcbiAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5Mb2FkZXJ9PkxvYWRpbmcuLi48L2Rpdj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IHNwaW5uZXI7Il19

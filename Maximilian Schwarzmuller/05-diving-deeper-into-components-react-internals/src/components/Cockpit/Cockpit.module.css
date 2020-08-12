@@ -1,0 +1,41 @@
+.red {
+  color: red;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.Button {
+  border-radius: 5px;
+  border: 0px solid rgb(5, 219, 5);
+  padding: 7px 17px;
+  background:  rgb(5, 219, 5);
+  font: inherit;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.Button:hover {
+  background: rgb(225, 240, 225);
+  color: black;
+  border: 0px solid rgb(225, 240, 225);
+}
+
+.Button.Red {
+  background-color: red;
+  color: white;
+}
+
+.Button.Red:hover {
+  background-color: salmon;
+  color: black;
+  border: 0px solid salmon;
+}
+
+.appTitle{
+  font-weight: 200px;
+  font-family: cursive;
+  color: cadetblue;
+}

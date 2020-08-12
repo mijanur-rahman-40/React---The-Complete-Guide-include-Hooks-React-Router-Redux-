@@ -1,0 +1,121 @@
+b99ab78a4a5ea9ccdb7bac26b8d6727c
+"use strict";
+
+var _interopRequireWildcard = require("/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/node_modules/@babel/runtime/helpers/interopRequireWildcard");
+
+var _interopRequireDefault = require("/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/node_modules/@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _BurgerIngredientModule = _interopRequireDefault(require("./BurgerIngredient.module.css"));
+
+var _jsxFileName = "/home/mijanur/MYCODE/JAVASCRIPT/REACTJS/react-courses-master/Maximilian Schwarzmuller/21-testing/src/components/Burger/BurgerIngredient/BurgerIngredient.js";
+
+class BurgerIngredient extends _react.Component {
+  render() {
+    let ingredient = null;
+
+    switch (this.props.type) {
+      case 'bread-bottom':
+        ingredient = _react.default.createElement("div", {
+          className: _BurgerIngredientModule.default.BreadBottom,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 12
+          },
+          __self: this
+        });
+        break;
+
+      case 'bread-top':
+        ingredient = _react.default.createElement("div", {
+          className: _BurgerIngredientModule.default.BreadTop,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 16
+          },
+          __self: this
+        }, _react.default.createElement("div", {
+          className: _BurgerIngredientModule.default.Seeds1,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 17
+          },
+          __self: this
+        }), _react.default.createElement("div", {
+          className: _BurgerIngredientModule.default.Seeds2,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 18
+          },
+          __self: this
+        }));
+        break;
+
+      case 'meat':
+        ingredient = _react.default.createElement("div", {
+          className: _BurgerIngredientModule.default.Meat,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23
+          },
+          __self: this
+        });
+        break;
+
+      case 'cheese':
+        ingredient = _react.default.createElement("div", {
+          className: _BurgerIngredientModule.default.Cheese,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 26
+          },
+          __self: this
+        });
+        break;
+
+      case 'bacon':
+        ingredient = _react.default.createElement("div", {
+          className: _BurgerIngredientModule.default.Bacon,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 29
+          },
+          __self: this
+        });
+        break;
+
+      case 'salad':
+        ingredient = _react.default.createElement("div", {
+          className: _BurgerIngredientModule.default.Salad,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 32
+          },
+          __self: this
+        });
+        break;
+
+      default:
+        ingredient = null;
+    }
+
+    return ingredient;
+  }
+
+}
+
+;
+BurgerIngredient.propTypes = {
+  type: _propTypes.default.string.isRequired
+};
+var _default = BurgerIngredient;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkJ1cmdlckluZ3JlZGllbnQuanMiXSwibmFtZXMiOlsiQnVyZ2VySW5ncmVkaWVudCIsIkNvbXBvbmVudCIsInJlbmRlciIsImluZ3JlZGllbnQiLCJwcm9wcyIsInR5cGUiLCJjbGFzc2VzIiwiQnJlYWRCb3R0b20iLCJCcmVhZFRvcCIsIlNlZWRzMSIsIlNlZWRzMiIsIk1lYXQiLCJDaGVlc2UiLCJCYWNvbiIsIlNhbGFkIiwicHJvcFR5cGVzIiwiUHJvcFR5cGVzIiwic3RyaW5nIiwiaXNSZXF1aXJlZCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFBQTs7QUFDQTs7QUFFQTs7OztBQUVBLE1BQU1BLGdCQUFOLFNBQStCQyxnQkFBL0IsQ0FBeUM7QUFDckNDLEVBQUFBLE1BQU0sR0FBRztBQUNMLFFBQUlDLFVBQVUsR0FBRyxJQUFqQjs7QUFFQSxZQUFRLEtBQUtDLEtBQUwsQ0FBV0MsSUFBbkI7QUFDSSxXQUFLLGNBQUw7QUFDSUYsUUFBQUEsVUFBVSxHQUFHO0FBQUssVUFBQSxTQUFTLEVBQUVHLGdDQUFRQyxXQUF4QjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxVQUFiO0FBQ0E7O0FBQ0osV0FBSyxXQUFMO0FBQ0lKLFFBQUFBLFVBQVUsR0FDTjtBQUFLLFVBQUEsU0FBUyxFQUFFRyxnQ0FBUUUsUUFBeEI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsV0FDSTtBQUFLLFVBQUEsU0FBUyxFQUFFRixnQ0FBUUcsTUFBeEI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsVUFESixFQUVJO0FBQUssVUFBQSxTQUFTLEVBQUVILGdDQUFRSSxNQUF4QjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxVQUZKLENBREo7QUFNQTs7QUFDSixXQUFLLE1BQUw7QUFDSVAsUUFBQUEsVUFBVSxHQUFHO0FBQUssVUFBQSxTQUFTLEVBQUVHLGdDQUFRSyxJQUF4QjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxVQUFiO0FBQ0E7O0FBQ0osV0FBSyxRQUFMO0FBQ0lSLFFBQUFBLFVBQVUsR0FBRztBQUFLLFVBQUEsU0FBUyxFQUFFRyxnQ0FBUU0sTUFBeEI7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUEsVUFBYjtBQUNBOztBQUNKLFdBQUssT0FBTDtBQUNJVCxRQUFBQSxVQUFVLEdBQUc7QUFBSyxVQUFBLFNBQVMsRUFBRUcsZ0NBQVFPLEtBQXhCO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBLFVBQWI7QUFDQTs7QUFDSixXQUFLLE9BQUw7QUFDSVYsUUFBQUEsVUFBVSxHQUFHO0FBQUssVUFBQSxTQUFTLEVBQUVHLGdDQUFRUSxLQUF4QjtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxVQUFiO0FBQ0E7O0FBQ0o7QUFDSVgsUUFBQUEsVUFBVSxHQUFHLElBQWI7QUF6QlI7O0FBMkJBLFdBQU9BLFVBQVA7QUFDSDs7QUFoQ29DOztBQWlDeEM7QUFFREgsZ0JBQWdCLENBQUNlLFNBQWpCLEdBQTZCO0FBQ3pCVixFQUFBQSxJQUFJLEVBQUVXLG1CQUFVQyxNQUFWLENBQWlCQztBQURFLENBQTdCO2VBSWVsQixnQiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBDb21wb25lbnQgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgUHJvcFR5cGVzIGZyb20gJ3Byb3AtdHlwZXMnO1xuXG5pbXBvcnQgY2xhc3NlcyBmcm9tICcuL0J1cmdlckluZ3JlZGllbnQubW9kdWxlLmNzcyc7XG5cbmNsYXNzIEJ1cmdlckluZ3JlZGllbnQgZXh0ZW5kcyBDb21wb25lbnQge1xuICAgIHJlbmRlcigpIHtcbiAgICAgICAgbGV0IGluZ3JlZGllbnQgPSBudWxsO1xuXG4gICAgICAgIHN3aXRjaCAodGhpcy5wcm9wcy50eXBlKSB7XG4gICAgICAgICAgICBjYXNlICdicmVhZC1ib3R0b20nOlxuICAgICAgICAgICAgICAgIGluZ3JlZGllbnQgPSA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5CcmVhZEJvdHRvbX0+PC9kaXY+O1xuICAgICAgICAgICAgICAgIGJyZWFrO1xuICAgICAgICAgICAgY2FzZSAnYnJlYWQtdG9wJzpcbiAgICAgICAgICAgICAgICBpbmdyZWRpZW50ID0gKFxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5CcmVhZFRvcH0+XG4gICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5TZWVkczF9PjwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9e2NsYXNzZXMuU2VlZHMyfT48L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgKTtcbiAgICAgICAgICAgICAgICBicmVhaztcbiAgICAgICAgICAgIGNhc2UgJ21lYXQnOlxuICAgICAgICAgICAgICAgIGluZ3JlZGllbnQgPSA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5NZWF0fT48L2Rpdj47XG4gICAgICAgICAgICAgICAgYnJlYWs7XG4gICAgICAgICAgICBjYXNlICdjaGVlc2UnOlxuICAgICAgICAgICAgICAgIGluZ3JlZGllbnQgPSA8ZGl2IGNsYXNzTmFtZT17Y2xhc3Nlcy5DaGVlc2V9PjwvZGl2PjtcbiAgICAgICAgICAgICAgICBicmVhaztcbiAgICAgICAgICAgIGNhc2UgJ2JhY29uJzpcbiAgICAgICAgICAgICAgICBpbmdyZWRpZW50ID0gPGRpdiBjbGFzc05hbWU9e2NsYXNzZXMuQmFjb259PjwvZGl2PjtcbiAgICAgICAgICAgICAgICBicmVhaztcbiAgICAgICAgICAgIGNhc2UgJ3NhbGFkJzpcbiAgICAgICAgICAgICAgICBpbmdyZWRpZW50ID0gPGRpdiBjbGFzc05hbWU9e2NsYXNzZXMuU2FsYWR9PjwvZGl2PjtcbiAgICAgICAgICAgICAgICBicmVhaztcbiAgICAgICAgICAgIGRlZmF1bHQ6XG4gICAgICAgICAgICAgICAgaW5ncmVkaWVudCA9IG51bGw7XG4gICAgICAgIH1cbiAgICAgICAgcmV0dXJuIGluZ3JlZGllbnQ7XG4gICAgfVxufTtcblxuQnVyZ2VySW5ncmVkaWVudC5wcm9wVHlwZXMgPSB7XG4gICAgdHlwZTogUHJvcFR5cGVzLnN0cmluZy5pc1JlcXVpcmVkXG59XG5cbmV4cG9ydCBkZWZhdWx0IEJ1cmdlckluZ3JlZGllbnQ7Il19

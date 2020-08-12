@@ -1,0 +1,256 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>375 Adding babel-polyfill</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>The current setup won't support all browsers theoretically supported by React. Features like Promises and <code>Object.assign()</code>  are missing in older browsers - especially in IE of course.</p>
+
+<p>If you need to support these browsers, you need to add a polyfill (a package which provides these features for older browsers). <code>babel-polyfill</code>  is a great and easy-to-use choice.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Add it like this:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><code>npm install --save babel-polyfill</code> </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Add the following import to the top of your index.js file:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">import 'babel-polyfill';</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Change the config of your <code>env</code>  babel preset in the <code>.babelrc</code>  file: </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">"presets": [
+    ["env", {
+        "targets": {
+            "browsers": [
+                "&gt; 1%",
+                "last 2 versions"
+            ]
+        },
+        "useBuiltIns": "entry"
+     }],
+     "stage-2",
+     "react"
+ ],</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><code>useBuiltIns</code>  was added and by setting it to <code>'entry'</code> , the import in the <code>index.js</code>  file (<code>import 'babel-polyfill'</code> ) is actually changed to import whatever features need to be supported for your chosen browsers and environment. More information can be found here: <a href="https://github.com/babel/babel-preset-env#usebuiltins-entry" rel="nofollow">https://github.com/babel/babel-preset-env#usebuiltins-entry</a></p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>

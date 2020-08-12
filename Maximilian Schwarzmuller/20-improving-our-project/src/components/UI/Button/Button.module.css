@@ -1,0 +1,43 @@
+.Button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 7px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+/* .Button:second-of-type {
+    margin-left: 0;
+    padding-left: 0;
+} */
+
+.Button:disabled{
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.Order{
+    color: white;
+    background: green;
+}
+
+.Success {
+    color:white;
+    background: green;
+}
+
+.Success:hover{
+     background: rgb(2, 102, 2);
+}
+
+.Danger {
+    color:white;
+    background: red;
+}
+
+.Danger:hover{
+     background: rgb(163, 3, 3);
+}

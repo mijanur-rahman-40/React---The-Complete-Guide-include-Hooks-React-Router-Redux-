@@ -1,0 +1,298 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>041 To Which Events Can You Listen</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>In the last lecture, we saw that you can react to the onClick event - but to which other events can you listen? You can find a list of supported events here: <a href="https://reactjs.org/docs/events.html#supported-events" rel="nofollow">https://reactjs.org/docs/events.html#supported-events</a></p><h4>Clipboard Events</h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onCopy onCut onPaste</pre>
+
+
+
+<p>Properties:</p>
+
+<pre class="prettyprint linenums">DOMDataTransfer clipboardData
+</pre>
+
+
+
+
+
+<h4><a class="anchor" href="https://reactjs.org/docs/events.html#composition-events" rel="nofollow"></a><p><a class="anchor" href="https://reactjs.org/docs/events.html#composition-events" rel="nofollow"></a>Composition Events</p></h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onCompositionEnd onCompositionStart onCompositionUpdate</pre>
+
+
+
+
+
+<p>Properties:</p>
+
+<pre class="prettyprint linenums">string data
+</pre>
+
+
+
+
+
+<h4><a class="anchor" href="https://reactjs.org/docs/events.html#keyboard-events" rel="nofollow"></a><p><a class="anchor" href="https://reactjs.org/docs/events.html#keyboard-events" rel="nofollow"></a>Keyboard Events</p></h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onKeyDown onKeyPress onKeyUp</pre>
+
+
+
+
+
+<p>Properties:</p>
+
+<pre class="prettyprint linenums">boolean altKey
+number charCode
+boolean ctrlKey
+boolean getModifierState(key)
+string key
+number keyCode
+string locale
+number location
+boolean metaKey
+boolean repeat
+boolean shiftKey
+number which
+</pre>
+
+
+
+
+
+<h4><a class="anchor" href="https://reactjs.org/docs/events.html#focus-events" rel="nofollow"></a><p><a class="anchor" href="https://reactjs.org/docs/events.html#focus-events" rel="nofollow"></a>Focus Events</p></h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onFocus onBlur</pre>
+
+
+
+
+
+<p>These focus events work on all elements in the React DOM, not just form elements.</p>
+
+<p>Properties:</p>
+
+<pre class="prettyprint linenums">DOMEventTarget relatedTarget
+</pre>
+
+
+
+
+
+<h4><a class="anchor" href="https://reactjs.org/docs/events.html#form-events" rel="nofollow"></a><p><a class="anchor" href="https://reactjs.org/docs/events.html#form-events" rel="nofollow"></a>Form Events</p></h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onChange onInput onInvalid onSubmit</pre>
+
+
+
+
+
+<p>For more information about the onChange event, see <a href="https://reactjs.org/docs/forms.html" rel="nofollow">Forms</a>.</p>
+
+<h4><a class="anchor" href="https://reactjs.org/docs/events.html#mouse-events" rel="nofollow"></a><p><a class="anchor" href="https://reactjs.org/docs/events.html#mouse-events" rel="nofollow"></a>Mouse Events</p></h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onClick onContextMenu onDoubleClick onDrag onDragEnd onDragEnter onDragExit
+onDragLeave onDragOver onDragStart onDrop onMouseDown onMouseEnter onMouseLeave
+onMouseMove onMouseOut onMouseOver onMouseUp</pre>
+
+
+
+
+
+<p>The <code>onMouseEnter</code> and <code>onMouseLeave</code> events propagate from the element being left to the one being entered instead of ordinary bubbling and do not have a capture phase.</p>
+
+<p>Properties:</p>
+
+<pre class="prettyprint linenums">boolean altKey
+number button
+number buttons
+number clientX
+number clientY
+boolean ctrlKey
+boolean getModifierState(key)
+boolean metaKey
+number pageX
+number pageY
+DOMEventTarget relatedTarget
+number screenX
+number screenY
+boolean shiftKey
+</pre>
+
+
+
+
+
+<h4><a class="anchor" href="https://reactjs.org/docs/events.html#selection-events" rel="nofollow"></a><p><a class="anchor" href="https://reactjs.org/docs/events.html#selection-events" rel="nofollow"></a>Selection Events</p></h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onSelect</pre>
+
+
+
+
+
+<h4><a class="anchor" href="https://reactjs.org/docs/events.html#touch-events" rel="nofollow"></a><p><a class="anchor" href="https://reactjs.org/docs/events.html#touch-events" rel="nofollow"></a>Touch Events</p></h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onTouchCancel onTouchEnd onTouchMove onTouchStart</pre>
+
+
+
+
+
+<p>Properties:</p>
+
+<pre class="prettyprint linenums">boolean altKey
+DOMTouchList changedTouches
+boolean ctrlKey
+boolean getModifierState(key)
+boolean metaKey
+boolean shiftKey
+DOMTouchList targetTouches
+DOMTouchList touches
+</pre>
+
+
+
+
+
+<h4><a class="anchor" href="https://reactjs.org/docs/events.html#ui-events" rel="nofollow"></a><p><a class="anchor" href="https://reactjs.org/docs/events.html#ui-events" rel="nofollow"></a>UI Events</p></h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onScroll</pre>
+
+
+
+
+
+<p>Properties:</p>
+
+<pre class="prettyprint linenums">number detail
+DOMAbstractView view
+</pre>
+
+
+
+
+
+<h4><a class="anchor" href="https://reactjs.org/docs/events.html#wheel-events" rel="nofollow"></a><p><a class="anchor" href="https://reactjs.org/docs/events.html#wheel-events" rel="nofollow"></a>Wheel Events</p></h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onWheel</pre>
+
+
+
+
+
+<p>Properties:</p>
+
+<pre class="prettyprint linenums">number deltaMode
+number deltaX
+number deltaY
+number deltaZ
+</pre>
+
+
+
+
+
+<h4><a class="anchor" href="https://reactjs.org/docs/events.html#media-events" rel="nofollow"></a><p><a class="anchor" href="https://reactjs.org/docs/events.html#media-events" rel="nofollow"></a>Media Events</p></h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onAbort onCanPlay onCanPlayThrough onDurationChange onEmptied onEncrypted
+onEnded onError onLoadedData onLoadedMetadata onLoadStart onPause onPlay
+onPlaying onProgress onRateChange onSeeked onSeeking onStalled onSuspend
+onTimeUpdate onVolumeChange onWaiting</pre>
+
+
+
+
+
+<h4><a class="anchor" href="https://reactjs.org/docs/events.html#image-events" rel="nofollow"></a><p><a class="anchor" href="https://reactjs.org/docs/events.html#image-events" rel="nofollow"></a>Image Events</p></h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onLoad onError</pre>
+
+
+
+
+
+<h4><a class="anchor" href="https://reactjs.org/docs/events.html#animation-events" rel="nofollow"></a><p><a class="anchor" href="https://reactjs.org/docs/events.html#animation-events" rel="nofollow"></a>Animation Events</p></h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onAnimationStart onAnimationEnd onAnimationIteration</pre>
+
+
+
+
+
+<p>Properties:</p>
+
+<pre class="prettyprint linenums">string animationName
+string pseudoElement
+float elapsedTime
+</pre>
+
+
+
+
+
+<h4><a class="anchor" href="https://reactjs.org/docs/events.html#transition-events" rel="nofollow"></a><p><a class="anchor" href="https://reactjs.org/docs/events.html#transition-events" rel="nofollow"></a>Transition Events</p></h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onTransitionEnd</pre>
+
+
+
+
+
+<p>Properties:</p>
+
+<pre class="prettyprint linenums">string propertyName
+string pseudoElement
+float elapsedTime
+</pre>
+
+
+
+
+
+<h4><a class="anchor" href="https://reactjs.org/docs/events.html#other-events" rel="nofollow"></a><p><a class="anchor" href="https://reactjs.org/docs/events.html#other-events" rel="nofollow"></a>Other Events</p></h4>
+
+<p>Event names:</p>
+
+<pre class="prettyprint linenums">onToggle</pre><p><br></p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>

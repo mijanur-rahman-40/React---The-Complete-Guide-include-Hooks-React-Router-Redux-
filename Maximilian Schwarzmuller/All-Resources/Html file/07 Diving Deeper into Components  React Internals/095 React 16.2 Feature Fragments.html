@@ -1,0 +1,70 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>095 React 16.2 Feature Fragments</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>If your project uses <strong>React 16.2</strong>, you can now use a built-in "Aux" component - a so called <strong>fragment</strong>.</p>
+
+<p>It's actually not called <code>Aux</code>  but you simply use <code>&lt;&gt;</code>  - an empty JSX tag.</p>
+
+
+
+
+
+
+
+<p>So the following code</p>
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">&lt;Aux&gt;
+    &lt;h1&gt;First Element&lt;/h1&gt;
+    &lt;h1&gt;Second Element&lt;/h1&gt;
+&lt;/Aux&gt;</pre>
+
+
+
+
+
+
+
+
+
+
+
+<p>becomes</p>
+
+
+
+
+
+<pre class="prettyprint linenums">&lt;&gt;
+    &lt;h1&gt;First Element&lt;/h1&gt;
+    &lt;h1&gt;Second Element&lt;/h1&gt;
+&lt;/&gt;</pre>
+
+
+
+
+
+
+
+
+
+
+
+<p>Behind the scenes, it does the same our <code>Aux</code>  component did.</p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>

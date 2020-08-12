@@ -1,0 +1,130 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>086 componentWillUnmount()</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><p>We saw the Component Lifecycle during Component Creation in Action. </p>
+
+<p>There also is one Lifecycle method which gets executed (when implemented) <strong>right before</strong> a Component is <strong>removed</strong> from the DOM: <code>componentWillUnmount()</code> .</p>
+
+
+
+
+
+<p><em>Here's an Example:</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><strong>App.js</strong> (using <code>class App extends Component</code> )</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">state = {
+    showUserComponent: true
+};
+
+removeUserHandler = () =&gt; {
+    this.setState({showUserComponent: false});
+}
+
+render() {
+    return (
+        &lt;div&gt;
+            {this.state.showUserComponent ? &lt;User /&gt; : null}
+            &lt;button onClick={this.removeUserHandler}&gt;Remove User Component&lt;/button&gt;
+        &lt;/div&gt;
+    );
+}</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><strong>User.js</strong> (using <code>class User extends Component</code> )</p>
+
+
+
+
+
+
+
+
+
+
+
+<pre class="prettyprint linenums">componentWillUnmount() {
+    // Component is about to get removed =&gt; Perform any cleanup work here!
+    console.log('I\'m about to be removed!');
+}</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>In the above example, the User component is removed upon a button click (due to it being rendered conditionally and the condition result being changed to <code>false</code> ). This triggers <code>componentWillUnmount()</code>  to run in the User component right before the component is destroyed and removed from the DOM.</p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>
